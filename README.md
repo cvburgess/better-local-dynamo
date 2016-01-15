@@ -39,7 +39,7 @@ For more options, pass an object like the following:
 localDynamo = require('local-dynamo');
 localDynamo.launch({
   dir: '/database/dir', // null will run DynamoDB in memory
-  port: 4567,
+  port: 4567, // defaults to 8000
   cors: [ 'http://whitelisted-domain.com' ], // defaults to '*'
   version: '2015-07-16_1.0' // defaults to 'latest'
 });
