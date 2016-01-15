@@ -47,7 +47,6 @@ localDynamo.launch({
 
 ## Things I'd love to do: (feel free to open a PR)
 
-- Rename the repo
 - Reduce dependencies
 - Add missing options to CLI
 - Add a sensible default value for `dir`
