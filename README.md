@@ -1,5 +1,4 @@
-## FORKED FROM: https://github.com/vweevers/local-dynamo
-## ORIGINAL REPO: https://github.com/Medium/local-dynamo
+#### ORIGINAL REPO: https://github.com/Medium/local-dynamo - thanks for the great work!
 
 Unfortunately, it felt like the original Medium repo was stagnant and had some amazing unmerged PRs.
 So, I grabbed them, merged them, and hope to keep improving this library!
