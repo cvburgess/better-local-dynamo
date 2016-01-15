@@ -1,8 +1,8 @@
 {
-  "name": "local-dynamo",
+  "name": "better-local-dynamo",
   "description": "A Node.js wrapper of AWS DynamoDB Local and utilities",
-  "version": "0.1.2",
-  "homepage": "https://github.com/Medium/local-dynamo",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cvburgess/better-local-dynamo",
   "licenses": [
     {
       "type": "Apache-2.0",
@@ -21,7 +21,7 @@
   "main": "lib/launch.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Medium/local-dynamo.git"
+    "url": "https://github.com/cvburgess/better-local-dynamo.git"
   },
   "scripts": {
     "test": "./node_modules/.bin/nodeunit test"

@@ -1,3 +1,13 @@
+## FORKED FROM: https://github.com/vweevers/local-dynamo
+## ORIGINAL REPO: https://github.com/Medium/local-dynamo
+
+Unfortunately, it felt like the original Medium repo was stagnant and had some amazing unmerged PRs.
+So, I grabbed them, merged them, and hope to keep improving this library!
+
+Please leave issues and most importantly PRs - I hope to keep this repo as active as necessary.
+
+---
+
 # A Node.js wrapper of [AWS DynamoDB Local](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.html)
 
 This is a thin wrapper of the [AWS DynamoDB Local](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.html).
@@ -8,39 +18,29 @@ Release notes can be found at http://aws.amazon.com/releasenotes/SDK/JavaScript
 
 ## Installing
 
-```sh
-npm install local-dynamo
-```
+    npm install better-local-dynamo
 
 ## Usage
 
 From command line:
 
-```bash
-$ node bin/launch_local_dynamo.js --database_dir=/database/dir --port=4567
-```
+    $ node bin/launch_local_dynamo.js --database_dir=/database/dir --port=4567
 
 or inside a Node.js application:
 
 ```javascript
-localDynamo = require('local-dynamo')
-localDynamo.launch('/database/dir', 4567)
+localDynamo = require('local-dynamo');
+localDynamo.launch('/database/dir', 4567);
 ```
 
-If you want to run DynamoDB Local in memory, pass in `null`:
+For more options, pass an object like the following:
 
 ```javascript
-localDynamo = require('local-dynamo')
-localDynamo.launch(null, 4567)
+localDynamo = require('local-dynamo');
+localDynamo.launch({
+  dir: '/database/dir', // null will run DynamoDB in memory
+  port: 4567,
+  cors: [ 'http://whitelisted-domain.com' ], // defaults to '*'
+  version: '2015-07-16_1.0' // defaults to 'latest'
+});
 ```
-
-## AWS DynamoDB Local Versions
-
-Here is a list of the versions DynamoDB Local that `local-dynamo` uses.
-
- * `0.0.1` -- `dynamodb_local_2013-09-12`
- * `0.0.2` -- `dynamodb_local_2014-01-08`
- * `0.0.3` -- `dynamodb_local_2014-04-24`
- * `0.0.4` -- `dynamodb_local_2014-10-07`
- * `0.0.5` -- `dynamodb_local_2015-01-27`
- * `0.0.6` -- `dynamodb_local_2015-04-27`
