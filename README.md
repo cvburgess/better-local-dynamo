@@ -4,7 +4,7 @@
 Unfortunately, it felt like the original Medium repo was stagnant and had some amazing unmerged PRs.
 So, I grabbed them, merged them, and hope to keep improving this library!
 
-Please leave issues and most importantly PRs - I hope to keep this repo as active as necessary.
+Please leave issues and, most importantly, PRs - I hope to keep this repo as active as necessary.
 
 ---
 
@@ -44,3 +44,12 @@ localDynamo.launch({
   version: '2015-07-16_1.0' // defaults to 'latest'
 });
 ```
+
+## Things I'd love to do: (feel free to open a PR)
+
+- Rename the repo
+- Reduce dependencies
+- Add missing options to CLI
+- Add a sensible default value for `dir`
+- Add a logger
+- Fix tests
