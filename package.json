@@ -1,7 +1,7 @@
 {
   "name": "better-local-dynamo",
   "description": "A Node.js wrapper of AWS DynamoDB Local and utilities",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "https://github.com/cvburgess/better-local-dynamo",
   "licenses": [
     {
